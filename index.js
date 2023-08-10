@@ -6,13 +6,17 @@ const host = "localhost";
 // use express router
 app.use('/', require('./routes'));
 
+//set up the view engine
+app.set('view engine' , 'ejs');
+app.use('views' , './views' );
+
 
 app.listen(port,host ,function(err){
 
 if(err){
     console.log(`Error in running the server ${err}`);
 }
- console.log(`Server is eunning on http://${host}:${port}`);
+ console.log(`Server is running on http://${host}:${port}`);
 
 });
 
