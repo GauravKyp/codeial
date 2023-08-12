@@ -6,6 +6,6 @@ const usersController = require('../controllers/user-controller');
 
 
 router.get('/profile', usersController.profile);
-
+router.get('/service', usersController.service);
 
 module.exports = router;

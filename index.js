@@ -7,8 +7,9 @@ const host = "localhost";
 app.use('/', require('./routes'));
 
 //set up the view engine
-app.set('view engine' , 'ejs');
-app.use('views' , './views' );
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
 
 
 app.listen(port,host ,function(err){
